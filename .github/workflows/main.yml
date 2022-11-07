@@ -1,9 +1,12 @@
 name: TEST_1
+# on:
+#   push: # enabling push event on master branch to fire the workflow
+#     branches:
+#       - main
 on:
-  push: # enabling push event on master branch to fire the workflow
-    branches:
-      - main
-
+  schedule:
+    # Runs "at minute 55 past every hour" (see https://crontab.guru)
+    - cron: '55 * * * *'
 
 jobs:
   job1:
