@@ -1,11 +1,10 @@
-name: Sample Workflow
-# on:
-#   push: # enabling push event on master branch to fire the workflow
-#     branches:
-#       - main
+name: TEST_1
 on:
-  schedule: 
-   - cron: '*/5 * * * *'
+  push: # enabling push event on master branch to fire the workflow
+    branches:
+      - main
+
+
 jobs:
   job1:
     runs-on: ubuntu-latest
