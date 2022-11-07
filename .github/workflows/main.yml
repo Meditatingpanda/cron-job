@@ -14,7 +14,7 @@ jobs:
     steps:
       - name: checkout out current code using public action
         uses: actions/checkout@v2
-      - name: get the list of files in our current directory and its subdirectory
+      - name: add download script
         run: | # this | enables us to multiple commands, good for formatting
           pwd
           ls -alR
